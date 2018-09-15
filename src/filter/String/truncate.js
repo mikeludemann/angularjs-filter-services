@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('filter', [])
 
     .filter('truncate', function () {
 
