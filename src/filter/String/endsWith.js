@@ -16,7 +16,7 @@ angular.module('filter', [])
             input = (sensitive) ? input : input.toLowerCase();
             getPosition = input.length - end.length;
 
-            return input.indexOf((sensitive) ? end : end.toLowerCase(), position) !== -1;
+            return input.indexOf((sensitive) ? end : end.toLowerCase(), getPosition) !== -1;
 
         }
 
