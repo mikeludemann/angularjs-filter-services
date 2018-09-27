@@ -124,7 +124,7 @@ angular.module('services', [])
 
             }
 
-            return x / y;
+            return x % y;
 
         }
 
