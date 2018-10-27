@@ -11,9 +11,9 @@ angular.module('filter', [])
             });
 
         }
-        return function (collection, joined) {
+        return function (collection, join) {
 
-            if (angular.isUndefined(joined)) {
+            if (angular.isUndefined(join)) {
 
                 return collection;
 
@@ -21,7 +21,7 @@ angular.module('filter', [])
 
             if (angular.isArray(collection)) {
 
-                return angular.isObject(joined) ? collection.concat(convertToArray(joined)) : collection.concat(joined);
+                return angular.isObject(join) ? collection.concat(convertToArray(join)) : collection.concat(join);
 
             }
 
@@ -29,7 +29,7 @@ angular.module('filter', [])
 
                 var array = convertToArray(collection);
 
-                return (angular.isObject(joined)) ? array.concat(convertToArray(joined)) : array.concat(joined);
+                return (angular.isObject(join)) ? array.concat(convertToArray(join)) : array.concat(join);
 
             }
 
