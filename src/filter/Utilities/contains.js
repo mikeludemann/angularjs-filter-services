@@ -2,9 +2,19 @@ angular.module('filter', [])
     .filter({
         contains: ['$parse', function ($parse) {
 
+            function convertToArray(object) {
+
+                return angular.isArray(object) ? object : Object.keys(object).map(function (key) {
+
+                    return object[key];
+
+                });
+
+            }
+
             return function (collection, expression) {
 
-                collection = angular.isObject(collection) ? toArray(collection) : collection;
+                collection = angular.isObject(collection) ? convertToArray(collection) : collection;
 
                 if (!angular.isArray(collection) || angular.isUndefined(expression)) {
 
@@ -22,13 +32,3 @@ angular.module('filter', [])
 
         }]
     });
-
-function toArray(object) {
-
-    return angular.isArray(object) ? object : Object.keys(object).map(function (key) {
-
-        return object[key];
-
-    });
-
-}
