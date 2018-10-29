@@ -14,7 +14,7 @@ angular.module('filter', [])
 
         return function (collection) {
 
-            return isObject(collection) ? !convertToArray(collection).length : !collection.length;
+            return angular.isObject(collection) ? !convertToArray(collection).length : !collection.length;
 
         }
 
