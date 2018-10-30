@@ -16,9 +16,9 @@ angular.module('filter', [])
 
             var count = 0;
 
-            return array.filter(function (elm) {
+            return array.filter(function (element) {
 
-                var different = angular.isDefined(expression) ? (count < index && expression(elm)) : count < index;
+                var different = angular.isDefined(expression) ? (count < index && expression(element)) : count < index;
 
                 count = different ? count + 1 : count;
 

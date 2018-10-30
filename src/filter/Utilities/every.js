@@ -22,9 +22,10 @@ angular.module('filter', [])
 
             }
 
-            return collection.every(function (elm) {
+            return collection.every(function (element) {
 
-                return (angular.isObject(elm) || angular.isFunction(expression)) ? $parse(expression)(elm) : elm === expression;
+                return (angular.isObject(element) || angular.isFunction(expression)) ? $parse(expression)(element) : element === expression;
+
             });
 
 

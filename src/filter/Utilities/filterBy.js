@@ -37,6 +37,7 @@ angular.module('filter', [])
                     } else {
 
                         var propertyList = prop.replace(/\s+/g, '').split('+');
+                        
                         comparator = propertyList.map(function (prop) { 
                             
                             return $parse(prop)(element); 

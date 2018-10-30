@@ -34,9 +34,9 @@ angular.module('filter', [])
 
             collection = angular.isObject(collection) ? convertToArray(collection) : collection;
 
-            return collection.filter(function (elm) {
+            return collection.filter(function (element) {
 
-                return !containObject(object, elm);
+                return !containObject(object, element);
 
             });
 
