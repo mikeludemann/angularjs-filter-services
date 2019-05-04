@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-filter-services",
+  "version": "1.0.0",
+  "description": "AngularJS Filter Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeludemann/angularjs-filter-services.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Filter",
+    "Services"
+  ],
+  "author": "Mike Ludemann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeludemann/angularjs-filter-services/issues"
+  },
+  "homepage": "https://github.com/mikeludemann/angularjs-filter-services#readme"
+}
